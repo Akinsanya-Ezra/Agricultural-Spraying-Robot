@@ -1,0 +1,36 @@
+{
+  "source_file": "TimirexControllerShort.ino",
+  "source_sha256": "98a994abdebd10085f0da0101a99d0d98c6ae68186c0c3273501ba7cd4997339",
+  "purpose": "Spraying-only documentation extracts; not independently deployable firmware",
+  "extracted_functions": [
+    "fluidStateName",
+    "targetName",
+    "orientationName",
+    "heartbeatHealthy",
+    "pulseToDuty",
+    "setPumpHardware",
+    "nozzleSettled",
+    "serviceNozzle",
+    "setSprayTarget",
+    "resetLevelFilter",
+    "updateLevelFilter",
+    "rawFluidPresent",
+    "fluidAvailableBeforeRecoveryAck",
+    "fluidOperational",
+    "fluidEmptyConfirmed",
+    "updateFluidState",
+    "sprayLeaseFresh",
+    "spraySafetyAllowsPump",
+    "applySprayOutput",
+    "sendSprayAndFluidTelemetry"
+  ],
+  "command_branch_starts": [
+    "HB",
+    "SPRAY,OFF",
+    "TARGET,WEED",
+    "FLUID,SENSOR,1",
+    "FLUID,RECOVER",
+    "SPRAY,ON"
+  ],
+  "verification": "Function and command bodies copied verbatim from local source matching the user-supplied listing; no hardware execution or standalone compilation performed."
+}
